@@ -1,0 +1,53 @@
+html,
+body {
+  height: 100%;
+  background-color: #f5f5f5;
+}
+
+body div .main {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+@media screen and (max-width: 600px) {
+    .image {
+        transform: scale(0.6);
+       
+        position:absolute;
+        left:-20%;
+        top: -20%;
+    }
+    
+  }
+.image{
+    position:absolute;
+    top: 0%;
+    z-index: 1;
+    padding:0;
+   
+}
+.weatherImageLogo{
+  background-color:dodgerblue;
+}
+.weatherDescription{
+  background-color:rgb(233, 255, 30);
+}
+.form-signin {
+  width: 100%;
+  max-width: 400px;
+  padding:15px;
+  margin: auto;
+}
+
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}

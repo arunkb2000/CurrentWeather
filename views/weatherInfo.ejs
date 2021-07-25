@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <title>Current <%= (infoData.cityName).charAt(0).toUpperCase() + (infoData.cityName).slice(1) %> Weather</title>
+  </head>
+  <body >
+      <% const city = (infoData.cityName).charAt(0).toUpperCase() + (infoData.cityName).slice(1);  %>
+      <% const temp = infoData.temperature; %>
+      <% const des = infoData.description; %>
+      <% const Wlogo=infoData.weatherImage; %>
+    <div>
+        <img src= "https://freepngimg.com/thumb/categories/2275.png" class=" image"/>
+        <h1 class="text-center bg-secondary heading font-weight-bold text-light pt-4 pb-4">Weather App</h1><hr>
+    </div>
+      <div class="text-center main">
+        <h1> The temperature in <%= city %> is <%= temp %>&#8451.</h1>
+        <p> The weather is currently <span class="weatherDescription"><%= des %></span> </p>
+        <img class="weatherImageLogo rounded-circle" src="<%= Wlogo %>" alt="<%=infoData.description %> image" >
+    </div><br>
+    <form action="/home" method="post" class="ml-5 mt-4">
+        <button class="btn btn-danger rounded-corner" type="submit" >Back</button>
+    </form>
+  </body>
+</html>
+
+
+
+
+      
